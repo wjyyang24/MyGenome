@@ -20,5 +20,5 @@ java -jar ~/trimmomatic-0.38.jar PE -threads 16 -phred33 -trimlog file.txt U249_
 
 ## 3. Count number of forward reads remaining
 ```bash
-grep...
+grep -c @A00261 U249_1_paired.fastq
 ```
