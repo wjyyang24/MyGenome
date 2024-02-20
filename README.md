@@ -11,4 +11,4 @@ fastqc &
 Load in F1 and R1 datasets into GUI interface.
 Take screen shots of output files:
 
-i[F1screenshot.png](/data/F1screenshot.png)
+![F1screenshot.png](/data/F1screenshot.png)
