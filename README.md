@@ -23,7 +23,7 @@ First, run head to view the headers of each read to find a suitable string for r
 ```bash
 head U249_1_paired.fastq
 ```
-Use the first part of header for each read to count the number of reads with grep
+Use the beginning of the header for each read to count the number of reads with grep
 ```bash
 grep -c @A00261:902:HGC52DSX7: U249_1_paired.fastq
 ```
