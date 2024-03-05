@@ -15,7 +15,9 @@ Take screen shots of output files:
 
 ## 2. Ran trimmomatic
 ```bash
-java -jar ~/trimmomatic-0.38.jar PE -threads 16 -phred33 -trimlog file.txt U249_1.fq.gz U249_2.fq.gz U249_1_paired.fastq U249_1_unpaired.fastq U249_2_paired.fastq U249_2_unpaired.fastq ILLUMINACLIP:adaptors.fasta:2:30:10 SLIDINGWINDOW:20:20 MINLEN:100
+java -jar ~/trimmomatic-0.38.jar PE -threads 16 -phred33 -trimlog file.txt \
+U249_1.fq.gz U249_2.fq.gz U249_1_paired.fastq U249_1_unpaired.fastq U249_2_paired.fastq U249_2_unpaired.fastq \
+ILLUMINACLIP:adaptors.fasta:2:30:10 SLIDINGWINDOW:20:20 MINLEN:100
 ```
 
 ## 3. Count number of forward reads remaining
