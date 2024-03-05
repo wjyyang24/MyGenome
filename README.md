@@ -19,6 +19,11 @@ java -jar ~/trimmomatic-0.38.jar PE -threads 16 -phred33 -trimlog file.txt U249_
 ```
 
 ## 3. Count number of forward reads remaining
+First, run head to view the headers of each read to find a suitable string for running grep
 ```bash
-grep -c @A00261 U249_1_paired.fastq
+head U249_1_paired.fastq
+```
+Use the first part of header for each read to count the number of reads with grep
+```bash
+grep -c @A00261:902:HGC52DSX7: U249_1_paired.fastq
 ```
