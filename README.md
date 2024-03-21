@@ -29,6 +29,7 @@ Use the beginning of the header for each read to count the number of reads with 
 ```bash
 grep -c @A00261:902:HGC52DSX7: U249_1_paired.fastq
 ```
+The output shows there are 12042994 forward reads remaining after trimming.
 
 ## 4. Genome assembly using Velvet
 The genome assembly was done on the University of Kentucky Morgan Compute Cluster. The velvet command was run using the [velvetoptimiser_noclean.sh](/velvetoptimiser_noclean.sh) SLURM script:
