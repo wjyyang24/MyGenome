@@ -31,7 +31,7 @@ grep -c @A00261:902:HGC52DSX7: U249_1_paired.fastq
 ```
 
 ## 4. Genome assembly using Velvet
-The genome assembly was done on the University of Kentucky Morgan Compute Cluster. The velvet command was run using a SLURM script:
+The genome assembly was done on the University of Kentucky Morgan Compute Cluster. The velvet command was run using the [velvetoptimiser_noclean.sh](/velvetoptimiser_noclean.sh) SLURM script:
 ```bash
 sbatch velvetoptimiser_noclean.sh U249 61 131 10
 ```
