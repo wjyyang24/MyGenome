@@ -2,7 +2,7 @@
 Analysis for ABT480/CS485G genome assembly
 
 ## 1. Analysis of sequence quality
-THe F1 and R1 sequence datasets were analyzed using FASTQC:
+The F1 and R1 sequence datasets were analyzed using FASTQC:
 ```bash
 ssh -Y <user@virtualmachine>
 cd MyGenome
@@ -29,3 +29,10 @@ Use the beginning of the header for each read to count the number of reads with 
 ```bash
 grep -c @A00261:902:HGC52DSX7: U249_1_paired.fastq
 ```
+
+## 4. Genome assembly using Velvet
+The genome assembly was done on the University of Kentucky Morgan Compute Cluster. The velvet command was run using a SLURM script:
+```bash
+sbatch velvetoptimiser_noclean.sh U249 61 131 10
+```
+This command submits the script containing the velvet command with arguments for the genome name, starting k-mer value, ending k-mer value, and step size as a SLURM job into the supercomputer job queue
